@@ -43,6 +43,12 @@ input[type=text]:focus {
     justify-content: center;
     font-size: 2rem;
     align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.headeritemleft:hover {
+    background-color: rgb(117, 117, 117);
 }
 
 .headeritemright {
@@ -52,6 +58,8 @@ input[type=text]:focus {
     font-size: 1.5rem;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    color: black;
 }
 
 .rightitems {
@@ -108,4 +116,12 @@ input[type=text]:focus {
     justify-content: center;
     align-items: center;
     border: 2px solid;
+}
+
+.currenttab {
+    background-color: rgb(100, 100, 100);
+}
+
+.currenttab:hover {
+    background-color: rgb(95, 95, 95);
 }
