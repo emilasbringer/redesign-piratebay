@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Yrsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
 
 body {
     padding: 0px;
     margin: 0px;
+    font-family: 'Pirata One', cursive;
 }
 
 input[type=search], select {
+    font-family: 'Pirata One', cursive;
     width: 404px;
     padding: 10px 20px;
     margin: 8px 0;
@@ -21,12 +24,12 @@ input[type=search]:focus {
 }
 
 .header {
+    font-family: 'Pirata One', cursive;
     position: relative;
     display: flex;
     height: 50px;
     width: 100%;
     background: grey;
-    font-family: "Yrsa";
     box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.329);
 }
 
@@ -95,11 +98,18 @@ input[type=search]:focus {
 }
 
 .searchicon {
+    display: flex;
     height: 50px;
     width: 55px;
-    background: grey;
+    background-color: rgb(92, 92, 92);
     border-radius: 3px;
-    z-index: -1;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchicon:hover {
+    background-color: #9e704d;
 }
 
 .genres {
@@ -128,6 +138,10 @@ input[type=search]:focus {
     border: 2px solid;
     border-radius: 2px;
     margin: 0px 10px;
+}
+
+.button:hover {
+    background-color: rgba(255, 238, 0, 0.568);
 }
 
 .currenttab {
@@ -166,12 +180,12 @@ input[type=search]:focus {
   /* Create a custom checkbox */
   .checkmark {
     position: absolute;
-    top: 0;
+    top: 3px;
     left: 0;
     height: 15px;
     width: 15px;
     background-color: #eee;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 1px;
   }
   
@@ -209,3 +223,14 @@ input[type=search]:focus {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
+
+  /* Helpers */
+
+  .w-100 {
+      width: 100%;
+  }
+
+  .w-90 {
+    display: block;
+    width: 90%;
+}   
