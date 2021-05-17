@@ -11,30 +11,42 @@
 <body>
     <div class="header">
         <a href="index.html"><div class="headericon"><img src="/images/Big logo.png" class="headericon"></div></a>
-        <a href="index.html" class="headeritemleft currenttab">Search</a>
-        <a href="browse.html" class="headeritemleft">Browse</a>
-        <a href="recent.html" class="headeritemleft">Recent</a>
-        <a href="top100.html" class="headeritemleft">Top 100</a>
+        <a href="index.html" class="headeritem itemleft currenttab">Search</a>
+        <a href="browse.html" class="headeritem itemleft">Browse</a>
+        <a href="recent.html" class="headeritem itemleft">Recent</a>
+        <a href="top100.html" class="headeritem itemleft">Top 100</a>
         <div class="rightitems">
-            <a href="donate.html" class="headeritemright">Donate</a>
-            <a href="signin.html" class="headeritemright">Sign In</a>
+            <a href="donate.html" class="headeritem itemright">Donate</a>
+            <a href="signin.html" class="headeritem itemright">Sign In</a>
+            <div class="containermenu" onclick="dropdownevent(this)" id="burgermenu">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>              
         </div>
     </div>
 
-    <div class="logo"><img src="/images/Big logo.png"></div>
+    <div class="dropdown" id="dropdown">
+        <a href="index.html" class="headeritemmenu">Search</a>
+        <a href="browse.html" class="headeritemmenu">Browse</a>
+        <a href="recent.html" class="headeritemmenu">Recent</a>
+        <a href="top100.html" class="headeritemmenu">Top 100</a>
+    </div> 
+
+    <div class="logo"><img src="/images/Big logo.png" class="zindex-"></div>
         
     <div class="searchbox">
         <div class="searchbar">
             <input type="search" id="search" name="search" placeholder="Pirate Search">
-            <div class="searchicon"><img src="/images/microphone.png" class="w-90"></div>
+            <div class="searchicon"><img src="/images/microphone.png" class="w-50"></div>
         </div>
         
-        <div class="genres">
-            <div class="genretext"><label class="container">Audio<input type="checkbox" ><span class="checkmark"></span></label></div>
-            <div class="genretext"><label class="container">Video<input type="checkbox" ><span class="checkmark"></span></label></div>
-            <div class="genretext"><label class="container">Applications<input type="checkbox" ><span class="checkmark"></span></label></div>
-            <div class="genretext"><label class="container">Games<input type="checkbox" ><span class="checkmark"></span></label></div>
-            <div class="genretext"><label class="container">Others<input type="checkbox" ><span class="checkmark"></span></label></div>
+        <div class="genres-grid">
+            <div class="genretext upperarea"><label class="container">Audio<input type="checkbox" ><span class="checkmark"></span></label></div>
+            <div class="genretext upperarea"><label class="container">Video<input type="checkbox" ><span class="checkmark"></span></label></div>
+            <div class="genretext lowerarea"><label class="container">Applications<input type="checkbox" ><span class="checkmark"></span></label></div>
+            <div class="genretext lowerarea"><label class="container">Games<input type="checkbox" ><span class="checkmark"></span></label></div>
+            <div class="genretext lowerarea"><label class="container">Others<input type="checkbox" ><span class="checkmark"></span></label></div>
         </div>
         
 
@@ -42,4 +54,5 @@
     </div>
 
 </body>
+<script src="/script/javascript.js"></script>
 </html>

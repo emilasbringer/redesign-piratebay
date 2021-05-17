@@ -31,6 +31,7 @@ input[type=search]:focus {
     width: 100%;
     background: grey;
     box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.329);
+    z-index: 10;
 }
 
 .headericon {
@@ -38,35 +39,29 @@ input[type=search]:focus {
     height: 50px;
 }
 
-.headeritemleft {
+.headeritem {
     display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+.headeritem:hover {
+    background-color: rgb(117, 117, 117);
+}
+
+.itemleft {
     height: 50px;
     width: 12%;
-    font-size: 1.5rem;
-    justify-content: center;
     font-size: 2rem;
-    align-items: center;
-    text-decoration: none;
-    color: black;
 }
 
-.headeritemleft:hover {
-    background-color: rgb(117, 117, 117);
-}
-
-.headeritemright {
-    display: flex;
-    height: 50px;
+.itemright {
     width: 50%;
     font-size: 1.5rem;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: black;
-}
-
-.headeritemright:hover {
-    background-color: rgb(117, 117, 117);
 }
 
 .rightitems {
@@ -78,9 +73,11 @@ input[type=search]:focus {
 }
 
 .logo {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .searchbox {
@@ -112,10 +109,13 @@ input[type=search]:focus {
     background-color: #9e704d;
 }
 
-.genres {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.genres-grid {
+    display: grid;
+    grid-template-areas:
+    'upper upper lower lower lower';
+    grid-column-gap: 5%;
+    background-color: #2195f385;
+    padding: 10px;
     margin-top: 20px;
 }
 
@@ -150,6 +150,40 @@ input[type=search]:focus {
 
 .currenttab:hover {
     background-color: rgb(95, 95, 95);
+}
+
+.dropdown {
+    position: absolute;
+    top: -155px;
+    right: 0px;
+    width: 200px;
+    height: 200px;
+    background: rgb(78, 78, 78);
+    z-index: 5;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.329);
+}
+
+.dropdownanimation {
+    animation: dropdownanimation 1s 1;
+}
+
+.dropupanimation {
+    animation: dropupanimation 1s 1;
+}
+
+.headeritemmenu {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background: rgb(184, 184, 184);
+}
+
+.headeritemmenu:hover {
+    background: rgb(77, 77, 77);
 }
 
 /*Checkbox styling*/
@@ -224,13 +258,122 @@ input[type=search]:focus {
     transform: rotate(45deg);
   }
 
+  /* burgermenu */
+  .containermenu {
+    display: inline-block;
+    cursor: pointer;
+    width: 35px;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(0, 0, 0);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
   /* Helpers */
 
   .w-100 {
       width: 100%;
   }
 
-  .w-90 {
+  .w-50 {
     display: block;
-    width: 90%;
-}   
+    width: 50%;
+  }
+  .zindex- {
+    z-index: 2;
+  }
+  .upperarea {
+    grid-area: upper;
+  }
+  .lowerarea {
+    grid-area: lower;
+}
+        
+@keyframes dropdownanimation {
+    from {top: -155px;}
+    to {top: 50px;}
+}
+
+@keyframes dropupanimation {
+    from {top: 50px;}
+    to {top: -155px;}
+}
+
+@media (min-width: 0px) {
+    .headeritem {
+        display: none;
+    }
+    .rightitems {
+        width: 35px;
+        margin-right: 10px;
+        padding-top: 5px;
+    }
+    .containtermenu {
+        display: block;
+    }
+    .dropdown {
+        display: block;
+    }
+    .searchbar {
+        width: 55%;
+    }
+    .container {
+        font-size: 3vw;
+    }
+    .genres-grid {
+        display: grid;
+        grid-template-areas:
+        'upper upper'
+        'lower lower lower';
+        grid-column-gap: 5%;
+        background-color: #2195f385;
+        padding: 10px;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 800px) {
+    .headeritem {
+        display: block;
+    }
+    .rightitems {
+        width: 20%;
+    }
+    .containermenu {
+        display: none;
+    }
+    .dropdown {
+        display: none;
+    }
+    .searchbar {
+        width: 450px;
+    }
+    .container {
+        font-size: 1.5rem;
+    }
+    .genres-grid {
+        display: grid;
+        grid-template-areas:
+        'upper upper lower lower lower';
+        grid-column-gap: 5%;
+        background-color: #2195f385;
+        padding: 10px;
+        margin-top: 20px;
+    }
+}
