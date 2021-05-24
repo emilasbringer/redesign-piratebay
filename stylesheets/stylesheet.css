@@ -10,12 +10,12 @@ body {
 input[type=search], select {
     font-family: 'Pirata One', cursive;
     width: 404px;
-    padding: 10px 20px;
+    padding: 5px 10px;
     margin: 8px 0;
     display: inline-block;
     border: 0px;
     border-radius: 4px;
-    font-size: 1.1rem;
+    font-size: 1.6rem;
     outline: 0;
   }
 
@@ -97,30 +97,22 @@ input[type=search]:focus {
 .searchicon {
     display: flex;
     height: 50px;
-    width: 55px;
+    width: 52.33px;
     background-color: rgb(92, 92, 92);
     border-radius: 3px;
-    z-index: 1;
     align-items: center;
     justify-content: center;
+    margin-right: -0.3px;
+    z-index: 1;
 }
 
 .searchicon:hover {
     background-color: #9e704d;
 }
 
-.genres-grid {
-    display: grid;
-    grid-template-areas:
-    'upper upper lower lower lower';
-    grid-column-gap: 5%;
-    background-color: #2195f385;
-    padding: 10px;
-    margin-top: 20px;
-}
-
 .genretext {
     margin: 0px 10px;
+    place-self: center;
 }
 
 .buttons {
@@ -200,6 +192,7 @@ input[type=search]:focus {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    width: 80%;
   }
   
   /* Hide the browser's default checkbox */
@@ -298,12 +291,6 @@ input[type=search]:focus {
   .zindex- {
     z-index: 2;
   }
-  .upperarea {
-    grid-area: upper;
-  }
-  .lowerarea {
-    grid-area: lower;
-}
         
 @keyframes dropdownanimation {
     from {top: -155px;}
@@ -334,17 +321,29 @@ input[type=search]:focus {
         width: 55%;
     }
     .container {
-        font-size: 3vw;
+        font-size: 4vw;
     }
     .genres-grid {
         display: grid;
         grid-template-areas:
-        'upper upper'
-        'lower lower lower';
-        grid-column-gap: 5%;
-        background-color: #2195f385;
+        'a1 a2 a3'
+        'o lower o';
+        background-color: #2195f300;
         padding: 10px;
-        margin-top: 20px;
+        margin-top: 20px;   
+    }
+    .b4 {
+        grid-area: lower;
+        margin:  auto;
+        
+      }
+    .b5 {
+        grid-area: lower;
+        margin: auto;
+    }
+    .lowercontainer {
+        display: flex;
+        margin: auto;
     }
 }
 
@@ -370,10 +369,28 @@ input[type=search]:focus {
     .genres-grid {
         display: grid;
         grid-template-areas:
-        'upper upper lower lower lower';
-        grid-column-gap: 5%;
-        background-color: #2195f385;
+        'a1 a2 a3 b4 b5';
+        grid-column-gap: 5px;
+        background-color: #2195f300;
         padding: 10px;
         margin-top: 20px;
+        width: 720px;
+        margin: auto;
     }
+      .a1 {
+        grid-area: a1;
+      }
+      .a2 {
+        grid-area: a2;
+      }
+      .a3 {
+        grid-area: a3;
+      }
+      .b4 {
+        grid-area: b4;
+        
+      }
+      .b5 {
+        grid-area: b5;
+      }
 }
