@@ -31,7 +31,11 @@ Jag tycker också javascript är ett väldigt intressant verktyg att arbeta med 
 Tillgänglighetsanpassning var något nytt för kursen när det kommer till konkret applikation för mig. Jag hade förkunskaper om tillgänglighetsanpassning från en annan kurs sedan tidagre vilket assisterade i arbetet kring tillgänglighet. I detta projekt gjorde jag t.ex texten större och mer lättläslig, jag gjorde också en microfonknapp för de som av någon anledning har svårigheter att skriva det de söker efter.
 
 ## Validering
-Validering för html visade att jag hade några mellanslag i filnamn som jag snabbt korrigeragde och att jag saknade "alt" attributer till vissa av mina "<img>" taggar.
+Validering för html visade att jag hade några mellanslag i filnamn som jag snabbt korrigeragde och att jag saknade "alt" attributer till vissa av mina "img" taggar. När jag validerade min css så visade jigsaw-tjänsten att jag faktiskt inte hade några fel, vilket var en första upplevelse. Då det inte var några tekniska fel på min kod så gick jag vidare och testade estiska och tillgänglighetsinriktade validatorer som lighthouse, vilket visade ett väldigt högt betyg på min sida. Min webbplats har bra kontraster och bra fontstorlek på alla upplösningar som är lättläst men som fortfarande håller det orginella temat av piratbay. Jag testade också programmet Tota11y på min sida vilket också visade på bra kontraster och bra alt attributer på mina imgs.
+
+<img src="https://raw.githubusercontent.com/emilasbringer/redesign-piratebay/main/dokumentation/html.png" alt="html" width="50%">
+<img src="https://raw.githubusercontent.com/emilasbringer/redesign-piratebay/main/dokumentation/css.png" alt="css" width="50%">
+<img src="https://raw.githubusercontent.com/emilasbringer/redesign-piratebay/main/dokumentation/lighthouse.png" alt="lighthouse" width="50%">
 
 ## Sammanfattning
 Sammanfattningsvis skulle jag säga att detta var ett väldigt lärorikt projekt inom design av hemsidor. De nya delarna inom html var väldigt facinerande att jobba med och gav mycket erfarnhet som kommer vara användbar inför framtida projekt. Min slutprodukt har fortfarande lite rum för förbättring t.ex responsiviteten av mina checklådor och position av vissa textdelar inom divs i headern. Överlag så är jag nöjd med min produkt och de erfarenheter projeket givit mig, tillgängligheten var också något nytt och intressant vilket överlag gjorde projeket mer lockande. 
