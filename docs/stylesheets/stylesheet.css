@@ -289,6 +289,11 @@ input[type=search]:focus {
     display: block;
     width: 50%;
   }
+  .w-40 {
+    display: block;
+    width: 40%;
+    min-width: 400px;
+  }
   .zindex- {
     z-index: 2;
   }
