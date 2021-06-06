@@ -30,6 +30,9 @@ Jag tycker också javascript är ett väldigt intressant verktyg att arbeta med 
 ## Tillgänglighetsanpassning
 Tillgänglighetsanpassning var något nytt för kursen när det kommer till konkret applikation för mig. Jag hade förkunskaper om tillgänglighetsanpassning från en annan kurs sedan tidagre vilket assisterade i arbetet kring tillgänglighet. I detta projekt gjorde jag t.ex texten större och mer lättläslig, jag gjorde också en microfonknapp för de som av någon anledning har svårigheter att skriva det de söker efter.
 
+## Validering
+
+
 ## Sammanfattning
 Sammanfattningsvis skulle jag säga att detta var ett väldigt lärorikt projekt inom design av hemsidor. De nya delarna inom html var väldigt facinerande att jobba med och gav mycket erfarnhet som kommer vara användbar inför framtida projekt. Min slutprodukt har fortfarande lite rum för förbättring t.ex responsiviteten av mina checklådor och position av vissa textdelar inom divs i headern. Överlag så är jag nöjd med min produkt och de erfarenheter projeket givit mig, tillgängligheten var också något nytt och intressant vilket överlag gjorde projeket mer lockande. 
 
